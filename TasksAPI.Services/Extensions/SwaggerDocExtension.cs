@@ -12,57 +12,60 @@ namespace TasksAPI.Services.Extensions
                 options.SwaggerDoc("v1",
                 new OpenApiInfo
                 {
-                    Title = "TasksAPI - COTI Informática",
-                    Description = "API para controle de tarefas - Curso C# Avançado Formação Arquiteto",
+
+                    Title = "TasksAPI",
+                    Description = "API para controle de tarefas",
+
                     Version = "v1",
                     Contact = new OpenApiContact
                     {
-                        Name = "COTI Informática",
-                        Email = "contato@cotiinformatica.com.br",
-                        Url = new Uri("http://www.cotiinformatica.com.br")
+                        Name = "Felipe Honorio",
+                        Email = "felipehonoriomoraes01@gmail.com",
+                        Url = new Uri("https://www.linkedin.com/in/felipe-honorio-b3aab7150/")
                     }
                 });
-
-                options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                options.AddSecurityDefinition("Bearer",
+                new OpenApiSecurityScheme
                 {
-                    Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
+                    Description = "JWT Authorization header using the Bearer scheme.Example: \"Authorization: Bearer {token}\"",
                     Name = "Authorization",
                     In = ParameterLocation.Header,
                     Type = SecuritySchemeType.ApiKey,
                     Scheme = "Bearer"
                 });
-
-                options.AddSecurityRequirement(new OpenApiSecurityRequirement
+                options.AddSecurityRequirement
+                (new OpenApiSecurityRequirement
                 {
-                    {
-                        new OpenApiSecurityScheme
-                        {
-                            Reference = new OpenApiReference
-                            {
-                                Type = ReferenceType.SecurityScheme,
-                                Id = "Bearer"
-                            },
-                            Scheme = "oauth2",
-                            Name = "Bearer",
-                            In = ParameterLocation.Header,
 
-                        },
+                {
+                new OpenApiSecurityScheme
+                {
+                    Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                        Id = "Bearer"
+                    },
+                        Scheme = "oauth2",
+                        Name = "Bearer",
+                        In = ParameterLocation.Header,
+
+                },
+
                         new List<string>()
+
                     }
                 });
             });
-
             return services;
         }
-
-        public static IApplicationBuilder UseSwaggerDoc(this IApplicationBuilder app)
+        public static IApplicationBuilder UseSwaggerDoc
+       (this IApplicationBuilder app)
         {
             app.UseSwagger();
             app.UseSwaggerUI(options =>
             {
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "TasksAPI");
             });
-
             return app;
         }
     }

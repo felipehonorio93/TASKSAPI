@@ -24,4 +24,8 @@
     <ProjectReference Include="..\TasksAPI.Domain\TasksAPI.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Contexts\" />
+  </ItemGroup>
+
 </Project>

@@ -29,8 +29,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksAPI.Domain", "TasksAPI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksAPI.Application", "TasksAPI.Application\TasksAPI.Application.csproj", "{3CD7885D-3D23-4128-AA1A-2158432F9441}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{4D8E863B-3CC2-46B1-93BB-741C6B4F2EBC}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksAPI.Data", "TasksAPI.Data\TasksAPI.Data.csproj", "{E4BC5D56-DADB-4F4E-A891-3545467C8DFA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksAPI.Messages", "TasksAPI.Messages\TasksAPI.Messages.csproj", "{64256CC9-F1B9-45CC-A9FD-D9D4EE230059}"
@@ -53,10 +51,6 @@ Global
 		{3CD7885D-3D23-4128-AA1A-2158432F9441}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CD7885D-3D23-4128-AA1A-2158432F9441}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CD7885D-3D23-4128-AA1A-2158432F9441}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4D8E863B-3CC2-46B1-93BB-741C6B4F2EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D8E863B-3CC2-46B1-93BB-741C6B4F2EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D8E863B-3CC2-46B1-93BB-741C6B4F2EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D8E863B-3CC2-46B1-93BB-741C6B4F2EBC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E4BC5D56-DADB-4F4E-A891-3545467C8DFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E4BC5D56-DADB-4F4E-A891-3545467C8DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4BC5D56-DADB-4F4E-A891-3545467C8DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
