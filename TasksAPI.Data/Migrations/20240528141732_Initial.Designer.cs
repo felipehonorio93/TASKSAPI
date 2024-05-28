@@ -12,7 +12,7 @@ using TasksAPI.Data.Contexts;
 namespace TasksAPI.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230807225117_Initial")]
+    [Migration("20240528141732_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
